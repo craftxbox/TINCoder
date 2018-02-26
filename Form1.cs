@@ -50,6 +50,8 @@ namespace tincoder
                     }
 
                     encodedImage.SetPixel(current.Val1, current.Val2, Color.FromArgb(ints[0], ints[1], ints[2], ints[3]));
+                    if(checkBox1.Checked == true)
+                        pictureBox1.Image = encodedImage;
                     current.Val1++;
                     if (current.Val1 == 1024)
                     {

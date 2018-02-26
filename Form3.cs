@@ -42,6 +42,8 @@ namespace tincoder
                     chars.Add((char)px.R);
                     chars.Add((char)px.G);
                     chars.Add((char)px.B);
+                    if(checkBox2.Checked == true)
+                        richTextBox1.Text = string.Join("", chars);
                     current.Val1++;
                     if (current.Val1 == encodedImage.Width)
                     {
