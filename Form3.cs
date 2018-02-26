@@ -42,11 +42,15 @@ namespace tincoder
                     chars.Add((char)px.R);
                     chars.Add((char)px.G);
                     chars.Add((char)px.B);
-                    if(checkBox2.Checked == true)
+                    if (checkBox2.Checked && checkBox4.Checked)
                         richTextBox1.Text = string.Join("", chars);
                     current.Val1++;
                     if (current.Val1 == encodedImage.Width)
                     {
+                        if (checkBox3.Checked)
+                            this.Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
+                        if (checkBox2.Checked)
+                            richTextBox1.Text = string.Join("", chars);
                         current.Val2++;
                         current.Val1 = 1;
                         if (current.Val2 == encodedImage.Height)
@@ -54,7 +58,8 @@ namespace tincoder
                             break;
                         }
                     }
-                    this.Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
+                    if (checkBox3.Checked && checkBox4.Checked)
+                        this.Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
                 }
                 richTextBox1.Text = string.Join("", chars);
                 this.Text = "Tincoder :: DONE";

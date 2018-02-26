@@ -32,7 +32,6 @@ namespace tincoder
                 Text = "Tincoder :: STARTING";
                 foreach (string c in list)
                 {
-                    Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
                     List<char> chars = new List<char>(c.ToCharArray());
                     while (chars.Count < 4)
                     {
@@ -50,11 +49,23 @@ namespace tincoder
                     }
 
                     encodedImage.SetPixel(current.Val1, current.Val2, Color.FromArgb(ints[0], ints[1], ints[2], ints[3]));
-                    if(checkBox1.Checked == true)
+                    if (checkBox1.Checked && checkBox3.Checked)
+                    {
                         pictureBox1.Image = encodedImage;
+                        Thread.Sleep(7);
+                    }
+                    if(checkBox2.Checked && checkBox3.Checked)
+                        Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
                     current.Val1++;
                     if (current.Val1 == 1024)
                     {
+                        if (checkBox1.Checked)
+                        {
+                            pictureBox1.Image = encodedImage;
+                            Thread.Sleep(7);
+                        }
+                        if (checkBox2.Checked)
+                            Text = "Tincoder :: " + current.Val1 + "/" + current.Val2;
                         current.Val2++;
                         current.Val1 = 1;
                         if (current.Val2 == 1024)
@@ -65,6 +76,7 @@ namespace tincoder
                 }
                 //end of list foreach
                 pictureBox1.Image = encodedImage;
+                Thread.Sleep(7);
                 Text = "Tincoder :: DONE";
                 button1.Enabled = true;
             }).Start();
