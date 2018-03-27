@@ -42,9 +42,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(334, 13);
+            this.richTextBox1.Location = new System.Drawing.Point(334, 31);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(352, 298);
+            this.richTextBox1.Size = new System.Drawing.Size(352, 280);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -90,7 +90,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(0, -1);
+            this.checkBox1.Location = new System.Drawing.Point(439, 17);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(141, 17);
             this.checkBox1.TabIndex = 5;
@@ -100,7 +100,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(148, -1);
+            this.checkBox2.Location = new System.Drawing.Point(329, 1);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(138, 17);
             this.checkBox2.TabIndex = 6;
@@ -112,7 +112,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(282, -1);
+            this.checkBox3.Location = new System.Drawing.Point(461, 2);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(163, 17);
             this.checkBox3.TabIndex = 7;
@@ -122,7 +122,7 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(444, 0);
+            this.checkBox4.Location = new System.Drawing.Point(329, 15);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(110, 17);
             this.checkBox4.TabIndex = 8;

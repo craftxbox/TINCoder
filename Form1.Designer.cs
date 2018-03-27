@@ -41,9 +41,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 30);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(352, 298);
+            this.richTextBox1.Size = new System.Drawing.Size(352, 280);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -114,7 +114,7 @@
             this.checkBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.checkBox3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.checkBox3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Location = new System.Drawing.Point(304, 0);
+            this.checkBox3.Location = new System.Drawing.Point(1, 14);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(110, 17);
             this.checkBox3.TabIndex = 6;
